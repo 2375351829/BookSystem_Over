@@ -4,7 +4,6 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-6DB33F?style=flat-square\&logo=spring)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=flat-square\&logo=mysql)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square\&logo=typescript)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 **现代化、智能化的图书管理平台**
 
