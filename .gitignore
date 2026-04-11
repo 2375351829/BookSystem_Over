@@ -1,0 +1,32 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Maven
+**/target/
+*.jar
+*.war
+
+# Node
+**/node_modules/
+**/dist/
+
+# Logs
+**/logs/
+*.log
+
+# Uploads
+**/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.local
+
+# Test
+test-output/
