@@ -1,0 +1,10 @@
+19:47:04.841722 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+19:47:04.853389 git.c:502               trace: built-in: git push -f origin main
+19:47:04.856970 run-command.c:674       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/2375351829/BookSystem_Over.git
+19:47:04.858003 run-command.c:935       trace: start_command: git remote-https origin https://github.com/2375351829/BookSystem_Over.git
+19:47:04.883218 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+19:47:04.893533 git.c:809               trace: exec: git-remote-https origin https://github.com/2375351829/BookSystem_Over.git
+19:47:04.894203 run-command.c:674       trace: run_command: git-remote-https origin https://github.com/2375351829/BookSystem_Over.git
+19:47:04.894203 run-command.c:935       trace: start_command: git-remote-https origin https://github.com/2375351829/BookSystem_Over.git
+19:47:04.910943 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+fatal: unable to access 'https://github.com/2375351829/BookSystem_Over.git/': getaddrinfo() thread failed to start

@@ -15,12 +15,12 @@ export default defineConfig({
     strictPort: false,
     proxy: {
       '/api': {
-        target: 'http://10.5.150.205:8080',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false
       },
       '/uploads': {
-        target: 'http://10.5.150.205:8080',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false
       }

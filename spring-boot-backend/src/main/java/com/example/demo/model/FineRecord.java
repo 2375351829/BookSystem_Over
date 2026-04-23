@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -13,43 +12,27 @@ import java.util.Date;
 public class FineRecord {
     @TableId(type = IdType.AUTO)
     private Long id;
-    
+
     private Long userId;
-    
-    @TableField("borrow_record_id")
     private Long borrowRecordId;
-    
-    @TableField("fine_type")
     private String fineType;
-    
     private BigDecimal amount;
-    
-    @TableField("paid_status")
     private Integer paidStatus;
-    
-    @TableField("paid_date")
     private Date paidDate;
-    
     private Long operatorId;
     private String remarks;
     private Integer deleted;
-    
-    @TableField("create_time")
     private Date createTime;
-    
+
+    public static final String TYPE_OVERDUE = "OVERDUE";
+    public static final String TYPE_DAMAGE = "DAMAGE";
+    public static final String TYPE_LOSS = "LOSS";
+
+    public void setFineTypeEnum(FineType fineType) {
+        this.fineType = fineType != null ? fineType.getCode() : null;
+    }
+
     public FineType getFineTypeEnum() {
         return FineType.fromCode(this.fineType);
-    }
-    
-    public void setFineTypeEnum(FineType fineType) {
-        this.fineType = fineType.getCode();
-    }
-    
-    public FineStatus getStatusEnum() {
-        return FineStatus.fromCode(this.paidStatus);
-    }
-    
-    public void setStatusEnum(FineStatus status) {
-        this.paidStatus = status.getCode();
     }
 }

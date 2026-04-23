@@ -2,7 +2,7 @@ import axios, { type AxiosInstance, type InternalAxiosRequestConfig } from 'axio
 import { ElMessage, ElMessageBox } from 'element-plus'
 
 const service: AxiosInstance = axios.create({
-  baseURL: 'http://127.0.0.1:8080/api',
+  baseURL: '/api',
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' }
 })
